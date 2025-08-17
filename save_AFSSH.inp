@@ -1,0 +1,35 @@
+3 !! iflow
+80                          !! iproc - max number of jobs running at a time
+60                          !! iparallel - number of jobs to parallelize
+120                         !! iwait
+50000                       !! N_traj - number of trajectories
+0.01d-15                    !! dt (*hbar/kT) -- dt_c
+100.d-12                     !! total_time (*hbar/kT)
+0                           !! iwrite: 1 - writes output_cl,output_qm
+10                          !! nstep_write - if iwrite=1, write output after every $nstep_write steps
+1000                         !! nstep_avg - averaging frequency
+1                           !! idistribution - 1-classical, 0-Wigner (0 not implemented yet)
+0                           !! flag_frust - 0: reverse velocity, 1 - do nothing on frustrated hop. 0 recommended
+0                           !! flag_ortho - 1: orthogonalized overlap matrix
+100.1d0                     !! energy_cutoff (cm-1) energy conservation threshold at each time-step
+1                           !! nclass - number of classical d.o.f.
+2                           !! nquant - number of quantum modes
+501                         !! n_dvr
+3                           !! nb_vib
+320.d0                      !! V_exothermicity (cm-1)
+30.8d0                      !! Vc (cm-1)
+1060.d0                     !! omg_B (cm-1)
+10.0d0                       !! lambda_B (cm-1)
+10580.354505141137          !! gamma_B (cm-1)
+300 !! temperature (K)
+1.d0                        !! initial_energy
+0                           !! draw_pes: 1 - make PES, 0 - don't make it!
+1                           !! iforward: 1- left to right, 0 - right to left - not used
+1                           !! icollapse: 1 - A-FSSH, 0 - FSSH
+1                           !! ifriction: 1 - random forces (Langevin dynamics)
+729 3141                   !! seed for random number
+5000                        !! nfile
+100.0d-15                   !! dtim
+1000                        !! n_tim
+10000                       !! n_instances
+x
